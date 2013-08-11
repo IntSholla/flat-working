@@ -17,12 +17,13 @@
     <file path="/application.rb" changelist="6e2f6aaa-a1b3-4efc-a57c-3c74a35d5425" time="1376229660096" ignored="false" />
     <file path="/new.html.erb" changelist="6e2f6aaa-a1b3-4efc-a57c-3c74a35d5425" time="1376231402022" ignored="false" />
     <file path="/edit.html.erb" changelist="6e2f6aaa-a1b3-4efc-a57c-3c74a35d5425" time="1376231733686" ignored="false" />
-    <file path="/user.rb" changelist="6e2f6aaa-a1b3-4efc-a57c-3c74a35d5425" time="1376232462973" ignored="false" />
-    <file path="$PROJECT_DIR$/db/schema.rb" changelist="6e2f6aaa-a1b3-4efc-a57c-3c74a35d5425" time="1376234628359" ignored="false" />
+    <file path="/user.rb" changelist="6e2f6aaa-a1b3-4efc-a57c-3c74a35d5425" time="1376238369063" ignored="false" />
+    <file path="$PROJECT_DIR$/db/schema.rb" changelist="6e2f6aaa-a1b3-4efc-a57c-3c74a35d5425" time="1376238880764" ignored="false" />
     <file path="/_form.html.erb" changelist="6e2f6aaa-a1b3-4efc-a57c-3c74a35d5425" time="1376234974699" ignored="false" />
-    <file path="/show.html.erb" changelist="6e2f6aaa-a1b3-4efc-a57c-3c74a35d5425" time="1376235103630" ignored="false" />
+    <file path="/show.html.erb" changelist="6e2f6aaa-a1b3-4efc-a57c-3c74a35d5425" time="1376239278723" ignored="false" />
     <file path="/index.html.erb" changelist="6e2f6aaa-a1b3-4efc-a57c-3c74a35d5425" time="1376236112335" ignored="false" />
     <file path="/listing.rb" changelist="6e2f6aaa-a1b3-4efc-a57c-3c74a35d5425" time="1376236243297" ignored="false" />
+    <file path="/_listing.html.erb" changelist="6e2f6aaa-a1b3-4efc-a57c-3c74a35d5425" time="1376239206449" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,17 +42,61 @@
     <favorites_list name="flat" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="listing.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/models/listing.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="61" selection-start="226" selection-end="226" vertical-scroll-proportion="0.23615819">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="listings_controller.rb" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/controllers/listings_controller.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="43" column="69" selection-start="1071" selection-end="1071" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="_listing.html.erb" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/views/listings/_listing.html.erb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="8" column="59" selection-start="337" selection-end="337" vertical-scroll-proportion="0.1800948">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/views/listings/show.html.erb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="23" column="18" selection-start="502" selection-end="502" vertical-scroll-proportion="-15.607142">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="listing.rb" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/models/listing.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="13" column="81" selection-start="266" selection-end="266" vertical-scroll-proportion="0.27909604">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="11" column="44" selection-start="503" selection-end="503" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -61,7 +106,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/app/views/pages/home.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
@@ -71,12 +115,13 @@
         <option value="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-        <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/views/listings/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/listings/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/user.rb" />
+        <option value="$PROJECT_DIR$/app/models/listing.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/listings_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/listings/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/listings/_listing.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/listings/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/listing.rb" />
       </list>
     </option>
   </component>
@@ -300,6 +345,22 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="RubyRunConfigurationType" factoryName="Ruby">
+      <module name="" />
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <method />
     </configuration>
     <configuration default="true" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest">
@@ -604,30 +665,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/listings_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/listings/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="19" selection-start="658" selection-end="658" vertical-scroll-proportion="-15.607142">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/listings/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="38" selection-start="200" selection-end="200" vertical-scroll-proportion="-5.428571">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/listings/_listing.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="5" selection-start="281" selection-end="281" vertical-scroll-proportion="-4.071429">
           <folding />
         </state>
       </provider>
@@ -639,16 +679,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/listings_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="69" selection-start="1071" selection-end="1071" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="3" selection-start="433" selection-end="433" vertical-scroll-proportion="0.21468927">
+        <state line="11" column="44" selection-start="503" selection-end="503" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/listing.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="61" selection-start="226" selection-end="226" vertical-scroll-proportion="0.23615819">
+        <state line="13" column="81" selection-start="266" selection-end="266" vertical-scroll-proportion="0.27909604">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/listings/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="18" selection-start="502" selection-end="502" vertical-scroll-proportion="-15.607142">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/listings/_listing.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="59" selection-start="337" selection-end="337" vertical-scroll-proportion="0.1800948">
           <folding />
         </state>
       </provider>

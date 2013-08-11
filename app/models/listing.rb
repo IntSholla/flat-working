@@ -8,4 +8,6 @@ class Listing < ActiveRecord::Base
 
 	validates :title, :presence => true, length: { minimum: 15, maximum: 40 }
 
+	validates :user_id, :presence => true
+
 end

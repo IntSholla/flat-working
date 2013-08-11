@@ -7,4 +7,7 @@ class User < ActiveRecord::Base
 
 	# Rails 4 switched from using attr_accessor to strong parameters
 	# I can Change and Edit in app/controllers/applicationcontroller.rb
+
+	# ONE user has MANY Listings
+	has_many :listings, :dependent => :destroy
 end
