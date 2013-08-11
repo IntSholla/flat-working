@@ -17,6 +17,7 @@
     <file path="/application.rb" changelist="6e2f6aaa-a1b3-4efc-a57c-3c74a35d5425" time="1376229660096" ignored="false" />
     <file path="/new.html.erb" changelist="6e2f6aaa-a1b3-4efc-a57c-3c74a35d5425" time="1376231402022" ignored="false" />
     <file path="/edit.html.erb" changelist="6e2f6aaa-a1b3-4efc-a57c-3c74a35d5425" time="1376231733686" ignored="false" />
+    <file path="/user.rb" changelist="6e2f6aaa-a1b3-4efc-a57c-3c74a35d5425" time="1376232462973" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,10 +37,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="application_controller.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <file leaf-file-name="user.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="24" selection-start="592" selection-end="592" vertical-scroll-proportion="0.42937854">
+            <state line="10" column="3" selection-start="433" selection-end="433" vertical-scroll-proportion="0.21468927">
               <folding />
             </state>
           </provider>
@@ -69,8 +70,8 @@
         <option value="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/user.rb" />
       </list>
     </option>
   </component>
@@ -593,16 +594,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="67" selection-start="466" selection-end="466" vertical-scroll-proportion="0.21468927">
+        <state line="20" column="24" selection-start="592" selection-end="592" vertical-scroll-proportion="0.42937854">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="24" selection-start="592" selection-end="592" vertical-scroll-proportion="0.42937854">
+        <state line="10" column="3" selection-start="433" selection-end="433" vertical-scroll-proportion="0.21468927">
           <folding />
         </state>
       </provider>
