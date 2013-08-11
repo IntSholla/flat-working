@@ -16,4 +16,5 @@
 //= require twitter/bootstrap
 //= require flatuipro
 //= require turbolinks
+//= require jquery.isotope.min.js
 //= require_tree .

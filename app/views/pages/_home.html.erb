@@ -1,3 +1,6 @@
+<% if user_signed_in? %>
+  <h5>You're logged in</h5>
+<% else %>
 <div class="hero-unit">
   <h1>Welcome to Vault</h1>
   <p>Fell free to Sign up now</p>
@@ -9,3 +12,4 @@
   </a>
 
 </div>
+<% end %>

@@ -1,10 +1,19 @@
-<tr>
-  <td><%= image_tag listing.image(:medium) %></td>
-  <td><%= listing.title %></td>
-  <td><%= listing.description %></td>
-  <td><%= link_to 'Show', listing %></td>
+<div class="listings-box">
+  <%= link_to (image_tag listing.image(:medium)), listing %>
+
+  <p class="listing-title">
+    <%= listing.title %>
+  </p>
+
+  <p class="listing-postedby">
+    <strong>
+      Posted by <%= listing.user.name %>
+    </strong>
+  </p>
+
+
   <% if current_user == listing.user %>
-    <td><%= link_to 'Edit', edit_listing_path(listing) %></td>
-    <td><%= link_to 'Destroy', listing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <%= link_to 'Edit', edit_listing_path(listing) %>
+    <%= link_to 'Destroy', listing, method: :delete, data: { confirm: 'Are you sure?' } %>
   <% end %>
-</tr>
+</div>

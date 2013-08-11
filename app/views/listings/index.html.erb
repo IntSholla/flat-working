@@ -1,24 +1,7 @@
-<h1>Listing listings</h1>
+<%= render "pages/home" %>
 
-<table class="table table-striped">
+<div id="listing">
+  <%= render @listings %>
+</div>
 
-  <thead>
-    <tr>
-      <th>Image</th>
-      <th>Title</th>
-      <th>Description</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
 
-  <tbody>
-    <%= render @listings %>
-  </tbody>
-
-</table>
-
-<br>
-
-<%= link_to 'New Listing', new_listing_path %>

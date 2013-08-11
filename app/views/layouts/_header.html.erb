@@ -12,24 +12,6 @@
               Menu Item
             </a>
           </li>
-          <li>
-            <a href="#fakelink">
-              Messages
-              <span class="navbar-unread">1</span>
-            </a>
-            <ul>
-              <li><a href="#fakelink">Element One</a></li>
-              <li>
-                <a href="#fakelink">Sub menu</a>
-                <ul>
-                  <li><a href="#fakelink">Element One</a></li>
-                  <li><a href="#fakelink">Element Two</a></li>
-                  <li><a href="#fakelink">Element Three</a></li>
-                </ul> <!-- /Sub menu -->
-              </li>
-              <li><a href="#fakelink">Element Three</a></li>
-            </ul> <!-- /Sub menu -->
-          </li>
         </ul> <!-- /nav -->
 
         <form class="navbar-search form-search pull-left" action="" align="center">
@@ -50,6 +32,7 @@
               <%= current_user.name %> <b class="caret"></b>
             </a>
             <ul class="dropdown-menu">
+              <li><li><%= link_to 'New Listing', new_listing_path %></li>
               <li><%= link_to "Edit Profile", edit_user_registration_path %></li>
               <li class="divider"></li>
               <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
