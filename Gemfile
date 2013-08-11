@@ -43,3 +43,5 @@ gem 'jquery-ui-sass-rails'
 gem 'designmodo-flatuipro-rails'
 
 gem "twitter-bootstrap-rails"
+
+gem 'rails_12factor'
