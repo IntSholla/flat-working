@@ -51,3 +51,7 @@ gem 'devise'
 gem 'simple_form'
 
 gem 'country_select'
+
+gem 'paperclip', github: 'thoughtbot/paperclip', branch: 'rails-4'
+
+
