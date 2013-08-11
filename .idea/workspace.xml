@@ -46,19 +46,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="63" selection-start="1238" selection-end="1238" vertical-scroll-proportion="0.0">
+            <state line="54" column="27" selection-start="1182" selection-end="1182" vertical-scroll-proportion="0.7633069">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="production.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="production.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="49" selection-start="3627" selection-end="3627" vertical-scroll-proportion="0.8278596">
+            <state line="91" column="49" selection-start="3627" selection-end="3627" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -88,8 +88,8 @@
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -889,16 +889,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="63" selection-start="1238" selection-end="1238" vertical-scroll-proportion="0.0">
+        <state line="91" column="49" selection-start="3627" selection-end="3627" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="49" selection-start="3627" selection-end="3627" vertical-scroll-proportion="0.8278596">
+        <state line="54" column="27" selection-start="1182" selection-end="1182" vertical-scroll-proportion="0.7633069">
           <folding />
         </state>
       </provider>
