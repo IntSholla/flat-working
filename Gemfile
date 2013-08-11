@@ -54,4 +54,6 @@ gem 'country_select'
 
 gem 'paperclip', github: 'thoughtbot/paperclip', branch: 'rails-4'
 
+gem 'aws-sdk'
+
 
