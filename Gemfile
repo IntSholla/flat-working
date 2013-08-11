@@ -45,3 +45,9 @@ gem 'designmodo-flatuipro-rails'
 gem "twitter-bootstrap-rails"
 
 gem 'rails_12factor'
+
+gem 'devise'
+
+gem 'simple_form'
+
+gem 'country_select'

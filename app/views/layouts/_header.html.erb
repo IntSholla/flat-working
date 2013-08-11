@@ -10,10 +10,9 @@
           <li>
             <a href="/flatuipro_demo/index">
               Menu Item
-              <span class="navbar-unread">1</span>
             </a>
           </li>
-          <li class="active">
+          <li>
             <a href="#fakelink">
               Messages
               <span class="navbar-unread">1</span>
@@ -31,11 +30,6 @@
               <li><a href="#fakelink">Element Three</a></li>
             </ul> <!-- /Sub menu -->
           </li>
-          <li>
-            <a href="#fakelink">
-              About Us
-            </a>
-          </li>
         </ul> <!-- /nav -->
 
         <form class="navbar-search form-search pull-left" action="" align="center">
@@ -49,18 +43,21 @@
 
         <ul class="nav pull-right">
           <li class="divider"></li>
+
+          <% if user_signed_in? %>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              Settings <b class="caret"></b>
+              <%= current_user.name %> <b class="caret"></b>
             </a>
             <ul class="dropdown-menu">
-              <li><a href="#fakelink">Action</a></li>
-              <li><a href="#fakelink">Another action</a></li>
-              <li><a href="#fakelink">Something else here</a></li>
+              <li><%= link_to "Edit Profile", edit_user_registration_path %></li>
               <li class="divider"></li>
-              <li><a href="#fakelink">Separated link</a></li>
+              <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
             </ul>
           </li>
+          <% else %>
+            <li><%= link_to "Login", new_user_session_path %></li>
+          <% end %>
         </ul> <!-- /nav -->
       </div><!--/.nav-collapse -->
     </div>

@@ -8,8 +8,18 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+
 <div class="container">
   <%= render 'layouts/header' %>
+
+  <% flash.each do |name, msg| %>
+      <%= content_tag(:div, class: "alert alert-#{name}") do%>
+          <%=msg%>
+          <button type="button" class="close fui-cross" data-dismiss="alert"></button>
+      <%end%>
+
+  <% end %>
+
   <%= yield %>
 </div>
 
