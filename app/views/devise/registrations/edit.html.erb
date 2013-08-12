@@ -3,11 +3,51 @@
 <%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put, class: 'form-horizontal' }) do |f| %>
     <%= f.error_notification %>
 
-    <!-- Name Input-->
+    <!-- Username Input-->
     <div class="control-group">
-      <label class="control-label">Name</label>
+      <label class="control-label">Username</label>
       <div class="controls">
         <%= f.input :name, :autofocus => true, label: false %>
+      </div>
+    </div>
+
+    <!-- First Name Input-->
+    <div class="control-group">
+      <label class="control-label">First Name</label>
+      <div class="controls">
+        <%= f.input :first_name, :autofocus => true, label: false %>
+      </div>
+    </div>
+
+    <!-- Last Name Input-->
+    <div class="control-group">
+      <label class="control-label">Last Name</label>
+      <div class="controls">
+        <%= f.input :last_name, :autofocus => true, label: false %>
+      </div>
+    </div>
+
+    <!-- Gender Field -->
+    <div class="control-group">
+      <label class="control-label">Gender</label>
+      <div class="controls">
+        <%= f.select :gender, [["Not Telling", 1], ["Male", 2], ["Female", 3]], label: false %>
+      </div>
+    </div>
+
+    <!-- User Bio Field -->
+    <div class="control-group">
+      <label class="control-label">Bio</label>
+      <div class="controls">
+        <%= f.input :user_bio, as: :text, input_html: { rows: "3" }, label: false %>
+      </div>
+    </div>
+
+    <!-- Country Field -->
+    <div class="control-group">
+      <label class="control-label">Location</label>
+      <div class="controls">
+        <%= f.input :country, label: false %>
       </div>
     </div>
 
