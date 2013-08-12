@@ -1,23 +1,64 @@
-
 <div class="row">
-  <div class="span6 offset3">
-    <div class="well">
-      <%= image_tag @listing.image %>
-      <p>
-        <%= @listing.description %>
-      </p>
-      <p>
-        <%= @listing.user.name %>
-      </p>
 
-      <% if current_user == @listing.user %>
-        <%= link_to 'Edit', edit_listing_path(@listing) %> |
+  <!-- Left Side-->
+  <div class="span8">
+
+    <p class="pull-left">
+      <strong>
+        <%= @listing.title %>
+      </strong>
+    </p>
+
+    <div class="btn-group pull-right">
+      <%= link_to  root_path, class: "btn btn-small" do %>
+        <i class="icon-arrow-left "></i> Back
       <% end %>
+      <% if current_user == @listing.user %>
+        <%= link_to  edit_listing_path(@listing), class: "btn btn-small" do %>
+          <i class="icon-edit "></i> Edit
+        <% end %>
+          <%= link_to @listing, method: :delete, data: { confirm: 'Are you sure?' },
+                      class: "btn btn-small btn-danger" do %>
+              <i class="icon-trash "></i> Delete
+          <% end %>
+      <% end %>
+    </div>
 
-      <%= link_to 'Back', listings_path %>
+    <div>
+      <%= image_tag @listing.image %>
+    </div>
+    <br>
+    <div>
+      <!--Simple_format for Showing HTML and line Breaks-->
+      <%= simple_format(@listing.description) %>
     </div>
   </div>
-</div>
 
-<%= link_to 'Edit', edit_listing_path(@listing) %> |
-<%= link_to 'Back', listings_path %>
+  <!-- Right Side -->
+  <div class="span4">
+
+
+    <div class="media">
+      <a class="pull-left" href="#">
+        <img src="http://placehold.it/64x64" class="media-object">
+      </a>
+
+      <div class="media-body">
+        <h5 class="media-heading"><%= @listing.user.name %></h5>
+        <%= link_to "View my Profile", @listing.user %>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Listing's Price -->
+    <div>
+      <h5><%= number_to_currency(@listing.price, :unit => "$") %></h5>
+    </div>
+
+  </div><!-- End Right Side-->
+
+
+
+
+</div>
