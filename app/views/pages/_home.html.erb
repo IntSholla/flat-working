@@ -6,10 +6,9 @@
   <p>Fell free to Sign up now</p>
   <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-small btn-info" %>
 
-  <a href="#fakelink" class="btn btn-small btn-social-facebook">
-    <i class="fui-facebook"></i>
-    Connect with Facebook
-  </a>
+  <%= link_to "Connect with Facebook", user_omniauth_authorize_path(:facebook), class: "btn btn-small btn-social-facebook" %>
 
 </div>
 <% end %>
+
+
