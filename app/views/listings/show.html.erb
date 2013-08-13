@@ -9,20 +9,7 @@
       </strong>
     </p>
 
-    <div class="btn-group pull-right">
-      <%= link_to  root_path, class: "btn btn-small" do %>
-        <i class="icon-arrow-left "></i> Back
-      <% end %>
-      <% if current_user == @listing.user %>
-        <%= link_to  edit_listing_path(@listing), class: "btn btn-small" do %>
-          <i class="icon-edit "></i> Edit
-        <% end %>
-          <%= link_to @listing, method: :delete, data: { confirm: 'Are you sure?' },
-                      class: "btn btn-small btn-danger" do %>
-              <i class="icon-trash "></i> Delete
-          <% end %>
-      <% end %>
-    </div>
+
 
     <div>
       <%= image_tag @listing.image %>
@@ -52,8 +39,23 @@
     <hr>
 
     <!-- Listing's Price -->
-    <div>
+    <div class="pull-left well">
       <h5><%= number_to_currency(@listing.price, :unit => "$") %></h5>
+    </div>
+
+    <div class="btn-group pull-right">
+      <%= link_to  root_path, class: "btn btn-small" do %>
+          <i class="icon-arrow-left "></i> Back
+      <% end %>
+      <% if current_user == @listing.user %>
+          <%= link_to  edit_listing_path(@listing), class: "btn btn-small" do %>
+              <i class="icon-edit "></i> Edit
+          <% end %>
+          <%= link_to @listing, method: :delete, data: { confirm: 'Are you sure?' },
+                      class: "btn btn-small btn-danger" do %>
+              <i class="icon-trash "></i> Delete
+          <% end %>
+      <% end %>
     </div>
 
   </div><!-- End Right Side-->

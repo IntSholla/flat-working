@@ -10,4 +10,6 @@ class User < ActiveRecord::Base
 
 	# ONE user has MANY Listings
 	has_many :listings, :dependent => :destroy
+
+	validates :user_bio, length: { maximum: 180 }
 end

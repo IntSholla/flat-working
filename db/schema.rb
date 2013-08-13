@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130812132236) do
+ActiveRecord::Schema.define(version: 20130813132955) do
 
   create_table "listings", force: true do |t|
     t.string   "title"
@@ -47,6 +47,9 @@ ActiveRecord::Schema.define(version: 20130812132236) do
     t.string   "user_bio"
     t.string   "country"
     t.integer  "gender",                 default: 1
+    t.string   "facebook_link"
+    t.string   "twitter_link"
+    t.string   "pinterest_link"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
